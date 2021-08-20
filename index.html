@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name Printing Program</title>
+        <style>
+            
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+                background-color: gray;
+            }
+
+            .column {
+                flex: 30%;
+                max-width: 30%;
+                padding: 0 4px;
+            }
+
+            .column img {
+                margin-top: 10px;
+                vertical-align: middle;
+                width: 80%;
+            }
+
+            #zuri{
+                margin-left: 80px;
+            }
+
+            #i4g{
+                margin-left: 100px;
+            }
+
+            #hng{
+                margin-left: 70px;
+            }
+
+            button {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: white;
+                background-color: CORAL;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 10px #999;
+            }
+                button:hover {background-color: coral}
+                button:active {
+                background-color: coral;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+            .content{
+                text-align: center;
+                margin-top: 200px;
+            }
+
+
+
+            @media screen and (max-width: 800px) {
+                .column {
+                    flex: 50%;
+                    max-width: 30%;
+                }
+                
+                #zuri{
+                    margin-left: 20px;
+                }
+
+                #i4g{
+                    margin-left: 30px;
+                }
+
+                #hng{
+                    margin-left: 40px;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .column {
+                    flex: 100%;
+                    max-width: 30%;
+                }
+                
+                #zuri{
+                    margin-left: 20px;
+                }
+
+                #i4g{
+                    margin-left: 30px;
+                }
+
+                #hng{
+                    margin-left: 40px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="row">
+ 
+            <div class="column">
+                <img src="images/hng-logo.png" id="hng">
+            </div>
+
+            <div class="column">
+                <img src="images/zuri-logo.png" id="zuri">
+            </div>
+
+            <div class="column">    
+                <img src="images//I4G-Logo.png" id="i4g">
+            </div>
+
+        </div>
+
+
+        <div class="content">
+            <h3>Hi, There!</h3><br><br>
+            <button id="btn">Click me</button><br><br><br><br>
+            <p><a href="https://uvereann.github.io/my-resume/" >View my Resume</a></p>
+
+        </div>
+
+
+        <script>
+
+            document.getElementById("btn").addEventListener("click", function() {
+                alert("My name is Ugwuonu Annastassia Ivuaku");
+            }, true);
+
+        </script>
+
+    </body>
+</html>
